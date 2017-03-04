@@ -1,6 +1,6 @@
 ﻿namespace Comp1004_Assignment03
 {
-    partial class Form1
+    partial class OrderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.Text = "OrderForm";
         }
 
         #endregion
     }
 }
-
