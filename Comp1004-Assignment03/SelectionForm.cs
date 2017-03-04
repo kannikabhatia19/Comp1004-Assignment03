@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ App's Name: Movie Bonanza
+ Author's Name: Kannika Bhatia
+ Student ID: 200332992
+ App's Creation Date: 4th March 2017
+ App Description: Movie rental application that has the movie's selection form,
+ order form, confirmation form
+ */
+ 
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +22,12 @@ namespace Comp1004_Assignment03
     
     public partial class SelectionForm : Form
     {
+        //INSTANCE VARIABLES++++++++++++++++++++++++++++++++++++++++++++++
         private Form _previousForm;
         private Dictionary<String, String> movieLists;
         private Dictionary<String, double> categoryPrice;
 
+        //CONSTRUCTOR+++++++++++++++++++++++++++++++++++++++++++++++++++++
         public SelectionForm()
         {
             InitializeComponent();
@@ -53,9 +64,9 @@ namespace Comp1004_Assignment03
             movieLists.Add("I am Number Four", "Sci-Fi");
             movieLists.Add("Footloose", "New Release");
             movieLists.Add("Real Steel", "New Release");
-
         }
 
+        //PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public Form PreviousForm
         {
             get
@@ -69,6 +80,7 @@ namespace Comp1004_Assignment03
             }
         }
 
+        //EVENT HANDLERS++++++++++++++++++++++++++++++++++++++++
         private void NextButton_Click(object sender, EventArgs e)
         {
             OrderForm orderForm = new OrderForm();

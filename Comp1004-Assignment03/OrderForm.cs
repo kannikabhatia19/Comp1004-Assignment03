@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ App's Name: Movie Bonanza
+ Author's Name: Kannika Bhatia
+ Student ID: 200332992
+ App's Creation Date: 4th March 2017
+ App Description: Movie rental application that has the movie's selection form,
+ order form, confirmation form
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +22,16 @@ namespace Comp1004_Assignment03
 {
     public partial class OrderForm : Form
     {
+        //INSTANCE VARIABLES++++++++++++++++++++++++++++++++++++++++++++++
         private SelectionForm _previousForm;
 
+        //CONSTRUCTOR+++++++++++++++++++++++++++++++++++++++++++++++++++++
         public OrderForm()
         {
             InitializeComponent();
         }
 
+        //PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public SelectionForm PreviousForm
         {
             get
@@ -32,6 +45,7 @@ namespace Comp1004_Assignment03
             }
         }
 
+        //EVENT HANDLERS++++++++++++++++++++++++++++++++++++++++
         private void StreamButton_Click(object sender, EventArgs e)
         {
             StreamForm streamForm = new StreamForm();
@@ -54,6 +68,9 @@ namespace Comp1004_Assignment03
             _costAdjusting();
         }
 
+        /// <summary>
+        /// This method adjust the price shown base on the selection of dvd
+        /// </summary>
         private void _costAdjusting() {
             if (DVDCheckBox.Checked)
             {
