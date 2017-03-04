@@ -8,11 +8,11 @@ namespace Comp1004_Assignment03
 {
     class Movie
     {
-        private string _title;
-        private string _category;
-        private double _cost;
+        private static string _title;
+        private static string _category;
+        private static double _cost;
 
-        public string Title
+        public static string Title
         {
             get
             {
@@ -25,7 +25,7 @@ namespace Comp1004_Assignment03
             }
         }
 
-        public string Category
+        public static string Category
         {
             get
             {
@@ -38,7 +38,7 @@ namespace Comp1004_Assignment03
             }
         }
 
-        public double Cost
+        public static double Cost
         {
             get
             {

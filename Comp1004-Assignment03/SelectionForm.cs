@@ -14,10 +14,12 @@ namespace Comp1004_Assignment03
     public partial class SelectionForm : Form
     {
         private Form _previousForm;
+        Movie movieSelected;
 
         public SelectionForm()
         {
             InitializeComponent();
+            movieSelected = new Movie();
         }
 
         public Form PreviousForm

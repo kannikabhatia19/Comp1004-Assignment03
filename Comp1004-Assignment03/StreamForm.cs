@@ -12,9 +12,24 @@ namespace Comp1004_Assignment03
 {
     public partial class StreamForm : Form
     {
+        private OrderForm _previousForm;
+
         public StreamForm()
         {
             InitializeComponent();
+        }
+
+        public OrderForm PreviousForm
+        {
+            get
+            {
+                return _previousForm;
+            }
+
+            set
+            {
+                _previousForm = value;
+            }
         }
     }
 }
