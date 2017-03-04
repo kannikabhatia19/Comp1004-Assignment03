@@ -49,33 +49,13 @@
             this.MoviesListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MoviesListBox.FormattingEnabled = true;
             this.MoviesListBox.ItemHeight = 20;
-            this.MoviesListBox.Items.AddRange(new object[] {
-            "Cedar Rapids  \t\t\tSci-Fi",
-            "Company\tMen",
-            "Death Race 2",
-            "Footloose",
-            "Gnomeo and Juliet",
-            "I am Number Four",
-            "Just Go With It",
-            "No Strings Attached",
-            "Real Steel",
-            "Sanctum",
-            "Season of the Witch",
-            "The Dilemma",
-            "The Eagle",
-            "The Green Hornet",
-            "The Mechanic",
-            "The Other\tWoman",
-            "The Rite",
-            "The Roommate",
-            "The Way Back",
-            "Waiting for Forever"});
             this.MoviesListBox.Location = new System.Drawing.Point(12, 111);
             this.MoviesListBox.Name = "MoviesListBox";
             this.MoviesListBox.Size = new System.Drawing.Size(207, 284);
             this.MoviesListBox.Sorted = true;
             this.MoviesListBox.TabIndex = 1;
             this.MoviesListBox.Tag = "";
+            this.MoviesListBox.SelectedIndexChanged += new System.EventHandler(this.MoviesListBox_SelectedIndexChanged);
             // 
             // CurrentMovieLabel
             // 
@@ -194,7 +174,7 @@
             // SelectionForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(782, 406);
+            this.ClientSize = new System.Drawing.Size(788, 437);
             this.ControlBox = false;
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.NextButton);
@@ -209,6 +189,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanza";
+            this.Load += new System.EventHandler(this.SelectionForm_Load);
             this.MovieSelectionGroupBox.ResumeLayout(false);
             this.MovieSelectionGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();

@@ -38,18 +38,19 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(134, 177);
+            this.OKButton.Location = new System.Drawing.Point(151, 177);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
             this.OKButton.TabIndex = 0;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // ThankyouLabel
             // 
             this.ThankyouLabel.AutoSize = true;
             this.ThankyouLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThankyouLabel.Location = new System.Drawing.Point(11, 30);
+            this.ThankyouLabel.Location = new System.Drawing.Point(23, 30);
             this.ThankyouLabel.Name = "ThankyouLabel";
             this.ThankyouLabel.Size = new System.Drawing.Size(327, 20);
             this.ThankyouLabel.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             this.CreditCardLabel.AutoSize = true;
             this.CreditCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreditCardLabel.Location = new System.Drawing.Point(12, 82);
+            this.CreditCardLabel.Location = new System.Drawing.Point(24, 82);
             this.CreditCardLabel.Name = "CreditCardLabel";
             this.CreditCardLabel.Size = new System.Drawing.Size(233, 16);
             this.CreditCardLabel.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             this.DollarLabel.AutoSize = true;
             this.DollarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DollarLabel.Location = new System.Drawing.Point(251, 82);
+            this.DollarLabel.Location = new System.Drawing.Point(263, 82);
             this.DollarLabel.Name = "DollarLabel";
             this.DollarLabel.Size = new System.Drawing.Size(72, 16);
             this.DollarLabel.TabIndex = 3;
@@ -78,7 +79,7 @@
             // MovieLabel
             // 
             this.MovieLabel.AutoSize = true;
-            this.MovieLabel.Location = new System.Drawing.Point(27, 122);
+            this.MovieLabel.Location = new System.Drawing.Point(10, 122);
             this.MovieLabel.Name = "MovieLabel";
             this.MovieLabel.Size = new System.Drawing.Size(89, 16);
             this.MovieLabel.TabIndex = 4;
@@ -88,7 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(118, 122);
+            this.label1.Location = new System.Drawing.Point(151, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 16);
             this.label1.TabIndex = 5;
@@ -97,7 +98,7 @@
             // StreamForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(346, 224);
+            this.ClientSize = new System.Drawing.Size(378, 220);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MovieLabel);
@@ -113,6 +114,8 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your movie is about to start!";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StreamForm_FormClosing);
+            this.Load += new System.EventHandler(this.StreamForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

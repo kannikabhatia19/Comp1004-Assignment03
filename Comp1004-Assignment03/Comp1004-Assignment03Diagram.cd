@@ -10,29 +10,36 @@
   <Class Name="Comp1004_Assignment03.SelectionForm" Collapsed="true">
     <Position X="2.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAEGAAAQAAAASAgIAqAIAAAgAAABCAAAAIAAA=</HashCode>
+      <HashCode>AAIAAAAAEGAABQAAAASAgIAqAIAAAgAAABCAAAAIAAA=</HashCode>
       <FileName>SelectionForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Comp1004_Assignment03.StreamForm" Collapsed="true">
     <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgCQAAAACAAQRAAAACAAAACCAAAAAAAADAAEAAQAAA=</HashCode>
       <FileName>StreamForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Comp1004_Assignment03.Movie" Collapsed="true">
     <Position X="4.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAKAABEAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>EAAAAAQAAKgABEAAAAAEABAAAAAAAAAAAAAAAIgACAA=</HashCode>
       <FileName>Movie.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Comp1004_Assignment03.OrderForm" Collapsed="true">
     <Position X="2.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAQAAAACAAAACAAAAAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>hQJIFBggACgBAQBBAACDIAAiAAAAAAACKhKAJSggAAg=</HashCode>
       <FileName>OrderForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Comp1004_Assignment03.AboutForm" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAABAAAACAAAACEAAAAAAEAAAAAAAABAA=</HashCode>
+      <FileName>AboutForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
