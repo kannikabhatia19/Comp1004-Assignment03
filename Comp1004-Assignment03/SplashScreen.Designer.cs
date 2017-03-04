@@ -48,6 +48,7 @@
             // 
             this.SplashScreenTimer.Enabled = true;
             this.SplashScreenTimer.Interval = 4000;
+            this.SplashScreenTimer.Tick += new System.EventHandler(this.SplashScreenTimer_Tick);
             // 
             // SplashScreen
             // 
@@ -58,6 +59,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.ResumeLayout(false);
             this.PerformLayout();

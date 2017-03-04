@@ -10,11 +10,35 @@ using System.Windows.Forms;
 
 namespace Comp1004_Assignment03
 {
+    
     public partial class SelectionForm : Form
     {
+        private Form _previousForm;
+
         public SelectionForm()
         {
             InitializeComponent();
+        }
+
+        public Form PreviousForm
+        {
+            get
+            {
+                return _previousForm;
+            }
+
+            set
+            {
+                _previousForm = value;
+            }
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm();
+            orderForm.PreviousForm = this;
+            orderForm.Show();
+            this.Hide();
         }
     }
 }

@@ -12,9 +12,24 @@ namespace Comp1004_Assignment03
 {
     public partial class OrderForm : Form
     {
+        private SelectionForm _previousForm;
+
         public OrderForm()
         {
             InitializeComponent();
+        }
+
+        public SelectionForm PreviousForm
+        {
+            get
+            {
+                return _previousForm;
+            }
+
+            set
+            {
+                _previousForm = value;
+            }
         }
     }
 }

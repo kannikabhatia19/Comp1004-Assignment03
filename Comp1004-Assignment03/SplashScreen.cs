@@ -16,5 +16,18 @@ namespace Comp1004_Assignment03
         {
             InitializeComponent();
         }
+
+        private void SplashScreenTimer_Tick(object sender, EventArgs e)
+        {
+            SelectionForm selectionForm = new SelectionForm();
+
+            selectionForm.PreviousForm = this;
+
+            this.SplashScreenTimer.Enabled = false;
+
+            selectionForm.Show();
+
+            this.Hide();
+        }
     }
 }
